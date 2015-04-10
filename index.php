@@ -3,8 +3,9 @@
 require(__DIR__ . '/vendor/autoload.php');
 
 use efabrikov\filetransfer\Factory;
-use efabrikov\filetransfer\FTP;
-use efabrikov\filetransfer\SSH;
+
+error_reporting(E_ERROR);
+ini_set("display_errors", 1);
 
 //create object
 $factory = new Factory();
